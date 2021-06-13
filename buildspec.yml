@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python
+        - pip install --upgrade "pip < 21.0"
         - python -m pip install Flask
   build:
     commands:
